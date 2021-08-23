@@ -1,0 +1,184 @@
+body{
+    background-color: #0770e3;
+    padding: 0;
+    margin: 0;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    margin: 100px auto 0px auto;
+    position: relative;
+    border:20px solid cornsilk;
+    font-family: 'Skyscanner Relative';
+    src: url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Book-dcf51b79.woff2')
+        format('woff2'),
+      url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Book-748018a8.woff')
+        format('woff'),
+      url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Book-323848c2.ttf')
+        format('ttf');
+}
+.center{
+    background-color: #02122c;
+    position: absolute;
+    left: calc(50% - 10px);
+    top:  calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 20;
+}
+.hourHand{
+    width: 10px;
+    height: 75px;
+    background-color: #02122c;
+    transform-origin: bottom center;
+    border-radius: 4px;
+    position: absolute;
+    top: 75px;
+    left: 145px;
+    z-index: 10;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      transform: rotate(360deg);
+
+}
+.minuteHand{
+    width: 5px;
+    height: 120px;
+    background-color: #02122c;
+    transform-origin: bottom center;
+    border-radius: 4px;
+    position: absolute;
+    top: 30px;
+    left: 147px;
+    z-index: 9;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      transform: rotate(90deg);
+
+}
+.time{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    border: 1px solid #fff8dc;
+    background-color: #fff;
+    padding: 5px;
+    display: block;
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,.4);
+    border-radius: 7px;
+    min-width: 70px;
+    height: 15px;
+
+}
+.time small{
+    color:#d1435b;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock ul{
+    list-style: none;
+    padding: 0;
+
+}
+.clock ul li{
+    position: absolute;
+    width:20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+}
+.clock ul li:nth-child(1){
+    right: 22%;
+    top:6.5%;
+}
+.clock ul li:nth-child(2){
+    right: 6%;
+    top:25%;
+}
+.clock ul li:nth-child(3){
+    right: 3%;
+    top:calc(50% - 10px);
+    color:#000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.clock ul li:nth-child(4){
+    right: 6%;
+    top:69%;
+}
+.clock ul li:nth-child(5){
+    right: 22%;
+    top:84%;
+}
+.clock ul li:nth-child(6){
+    right: calc(50% - 10px);
+    top:calc(99% - 20px);
+    color:#000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.clock ul li:nth-child(7){
+    left: 22%;
+    top:84%;
+}
+.clock ul li:nth-child(8){
+    left: 6%;
+    top:69%;
+}
+.clock ul li:nth-child(9){
+    left: 1%;
+    top:calc(50% - 10px);
+    color:#000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.clock ul li:nth-child(10){
+    left: 6%;
+    top:25%;
+}
+.clock ul li:nth-child(11){
+    left: 22%;
+    top:6.5%;
+}
+.clock ul li:nth-child(12){
+    right: calc(50% - 10px);
+    top:1%;
+    color:#000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*  footer   */
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+    font-family: 'Skyscanner Relative';
+    src: url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Book-dcf51b79.woff2')
+        format('woff2'),
+      url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Book-748018a8.woff')
+        format('woff'),
+      url('https://js.skyscnr.com/sttc/bpk-fonts/SkyscannerRelative-Book-323848c2.ttf')
+        format('ttf');
+    font-weight: bold;
+}
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+  margin-right:5px;
+}
+/* footer  */
